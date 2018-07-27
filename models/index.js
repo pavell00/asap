@@ -2,13 +2,13 @@ const Sequelize = require('sequelize');
 const sequelize = require('../db');
 
 const User = sequelize.define('user', {
-	login: Sequelize.STRING,
-	password: Sequelize.STRING,
+	login: Sequelize.TEXT,
+	password: Sequelize.TEXT
 });
 
-const Order = sequelize.define('order', {
+const Order = sequelize.define('orders', {
 	title: Sequelize.STRING,
-	date: {
+	order_date: {
 		type: Sequelize.DATE,
 		defaultValue: Sequelize.NOW
 	},

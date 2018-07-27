@@ -1,7 +1,7 @@
 const Users = require('../models').User;
 const config =  require('../config');
 const CustomError = require('../CustomError');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const authenticate = params => {
