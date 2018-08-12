@@ -5,11 +5,12 @@ const authService = require('../services/auth');
 const userService = require('../services/user');
 
 function login(req, res){
+	console.log(req.body);
 	return authService.authenticate(req.body)
 	.then(token => {
 		res.send({
 			success: true,
-			data: { token }
+			token:  token
 		});
 	})
 	.catch(err => {

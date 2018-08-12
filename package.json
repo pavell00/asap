@@ -2,20 +2,20 @@
   "name": "asap",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VitaliiKulyk/asap.git"
+    "url": "git+https://github.com/pavell00/asap"
   },
   "author": "Vitalii Kulyk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VitaliiKulyk/asap/issues"
+    "url": "https://github.com/pavell00/asap/issues"
   },
-  "homepage": "https://github.com/VitaliiKulyk/asap#readme",
+  "homepage": "https://github.com/pavell00/asap#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.1",
