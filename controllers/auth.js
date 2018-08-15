@@ -5,12 +5,12 @@ const authService = require('../services/auth');
 const userService = require('../services/user');
 
 function login(req, res){
-	console.log(req.body);
+	//console.log(req.body);
 	return authService.authenticate(req.body)
 	.then(token => {
 		res.send({
 			success: true,
-			token:  token
+			token: token
 		});
 	})
 	.catch(err => {
@@ -35,7 +35,7 @@ function register(req, res){
 		if (exists){
 			return res.send({
 				success: false,
-				message: 'Registration failed. User with this email already registered.'
+				message: 'Registration failed. User with this login already registered.'
 			});
 		}
 
