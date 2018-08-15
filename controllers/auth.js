@@ -41,6 +41,7 @@ function register(req, res){
 
 		var user = {
 			login: req.body.login,
+			email: req.body.email,
 			password: bcrypt.hashSync(req.body.password, config.saltRounds)
 		}
 

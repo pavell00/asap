@@ -3,7 +3,8 @@ const sequelize = require('../db');
 
 const User = sequelize.define('user', {
 	login: Sequelize.TEXT,
-	password: Sequelize.TEXT
+	password: Sequelize.TEXT,
+	email: Sequelize.TEXT
 });
 
 const Order = sequelize.define('orders', {
