@@ -50,7 +50,11 @@ function register(req, res){
 	});
 };
 
+function test(req, res) {
+	return res.send({success: true});
+};
+
 module.exports = {
 	login,
-	register
+	register, test
 }

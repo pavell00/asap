@@ -12,8 +12,12 @@ const checkAuth = (req, res, next) => {
 
     req.user = {
 			login: decoded.login,
-			id: decoded.id
+			id: decoded.id,
+			time: decoded.time,
+			iat: decoded.iat,
+			exp: decoded.exp,
 		};
+	//console.log(req.user);
     next();
 	});
 }

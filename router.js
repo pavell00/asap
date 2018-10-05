@@ -8,6 +8,7 @@ module.exports.set = (app) => {
 	app.post('/login', authController.login);
 	app.post('/register', authController.register);
 	//next endpoints require auth
+	app.get('/access', authMiddleware.checkAuth, authController.test);
 	app.get('/orders', authMiddleware.checkAuth, orderController.getOrders);
 	app.get('/orders/:id', authMiddleware.checkAuth, orderController.getOrder);
 	app.post('/orders', authMiddleware.checkAuth, orderController.addOrder);
