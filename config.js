@@ -3,6 +3,6 @@ module.exports = {
 	dbConnectionString: 'postgres://postgres:223245@localhost:5432/employees',
 	saltRounds: 2,
 	jwtSecret: 'yo-its-a-secret',
-	tokenExpireTime: '3m'
+	tokenExpireTime: '1h'
 }
 //don't store this file in repository, it's unsecure
